@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'vazir';
+    src: url('../fonts/vazir.eot') format('eot'),
+     url('../fonts/vazir.ttf') format('truetype'),
+    url('../fonts/vazir.woff') format('woff'),
+    url('../fonts/vazir.woff2') format('woff2');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    direction: rtl;
+    font-family: 'vazir';
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/img/p404.png);
+    background-repeat:repeat;
+    background-color: #130f40;
+}
+h1{
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 5px solid #fbc531;
+    color:#fed330;
+}
+.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 60px;
+    position: relative;
+}
+.password input{
+    width: 52%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: 'vazir';
+    font-size: 18px;
+    border: 3px solid #dcdde1;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    outline: none;
+}
+.fa-eye-slash{
+    display: none;
+}
+.toggle{
+    position: absolute;
+    right: 100px;
+}
+.toggle svg{
+    color:#e1b12c;
+    opacity: 1;
+    cursor: pointer;
+    font-size: 20px;
+}
+.toggle svg :hover{
+    opacity: 0.5;
+}
+.hide .fa-eye-slash{
+    display: block;
+}
+.hide .fa-eye{
+    display: none;
+}
